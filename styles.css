@@ -262,7 +262,7 @@ nav .btn:hover{
     opacity: 0.5;
     transform: scale(1.05);
 }
-#projetos, #habilidades, #contato, #sobre{
+#projetos, #habilidades, #certificados, #contato, #sobre{
     padding: 50px 20px;
     border-radius: 10px;
     width: 100%;
@@ -281,7 +281,7 @@ h2{
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.projetos-container, .habilidades-container{
+.projetos-container, .habilidades-container, .certificados-container{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -396,6 +396,45 @@ h2{
 .subSkill{
     font-size: 10pt;
     color: rgb(164, 164, 164);
+}
+
+.certificados-container{
+    flex-wrap: wrap;
+}
+.certificado{
+    width: 15rem;
+    height: 10rem;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(49, 49, 49);
+    backdrop-filter: blur(4px);
+    color: var(--cor-letra);
+}
+.cursoCertificado{
+    font-size: 13pt;
+    font-weight: 500;
+    text-align: center;
+}
+.infos_instituicao{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 10pt;
+    color: rgb(164, 164, 164);
+}
+.certificado a{
+    color: var(--cor-letra);
+    transition: all 0.4s ease;
+}
+.certificado a:hover{
+    transform: scale(1.08);
+    text-shadow: 0px 0px 10px rgb(44, 83, 255);
 }
 
 .verTextoIngles{
@@ -583,6 +622,26 @@ textarea{
         width: 40dvw;
         height: 8dvh;
         text-align: center;
+    }
+    #certificados{
+        min-height: 50dvh;
+    }
+    .certificados-container{
+        justify-content: space-around;
+        gap: 5px;
+    }
+    .certificado{
+        width: 12rem;
+        height: 10rem;
+        padding: 20px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid rgb(49, 49, 49);
+        backdrop-filter: blur(4px);
+        color: var(--cor-letra);
     }
     .texto2{
         display: none;
