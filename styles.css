@@ -140,7 +140,7 @@ html{
     filter: brightness(0.5);
 }
 header{
-    position: fixed;
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -198,9 +198,10 @@ header ul li a:hover{
     height: 100dvh;
 }
 .fotoApresentacao img{
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     margin-top: 20px;
+    border-radius: 50%;
 }
 .linksApresentacao ul{
     width: 15dvw;
